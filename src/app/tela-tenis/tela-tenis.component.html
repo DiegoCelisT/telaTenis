@@ -22,7 +22,7 @@
     
     <aside>
         <h5>
-            Calçados/ Masculino / Esportes / Casual  
+            Calçados / Masculino / Esportes / <span>Casual</span>  
         </h5>
 
         <h2>
@@ -35,18 +35,18 @@
 
         <div id="code">
             <figure>
-                <img alt="lapiz">
+                <img src="../../assets/Icons_SVG/icon-numero-1.svg" alt="lápis">
                 <figcaption>
                     55148
                 </figcaption>
             </figure>
             <figure>
-                <img alt="etiqueta">
+                <img src="../../assets/Icons_SVG/icon-numero-2.svg" alt="etiqueta">
                 <figcaption>
                     AP0900
                 </figcaption>
             </figure>
-            <img alt="estrelas">
+            <img src="../../assets/Icons_SVG/icon-avalia��o.svg" alt="avaliação">
         </div>
 
         <p>
@@ -58,7 +58,7 @@
         </h3>
 
         <ul>
-            <li>37</li>
+            <li class="sizeSelected">37</li>
             <li>38</li>
             <li>39</li>
             <li>40</li>
@@ -69,33 +69,33 @@
             <li>45</li>
         </ul>
 
-        <button>
+        <button id="cartButton">
             <figure>
-                <img alt="carrinho">
+                <img src="../../assets/Icons_SVG/icon carrinho.svg" alt="carrinho">
                 <figcaption>
                     ADICIONAR AO CARRINHO
                 </figcaption>
             </figure>
         </button>
-        <button>
+        <button id="desireButton">
             <figure>
-                <img alt="coração">
+                <img src="../../assets/Icons_SVG/icon-desejos.svg" alt="coração">
                 <figcaption>
                     + LISTA DE DESEJOS
                 </figcaption>
             </figure>
         </button>
 
-        <h3>
+        <h4>
             CALCULAR FRETE E ENTREGA
-        </h3>
+        </h4>
         <form>
             <p>Calcule o frete e o prazo de entrega estimados para sua região. Informe seu CEP:</p>
-    
-            <input type="text" name="CEP" placeholder="CEP" required>
-            <button type="submit">CALCULAR</button>
-    
-            <p>Não sei meu CEP</p>
+            <div>
+                <input type="text" name="CEP" placeholder="CEP" required>
+                <button type="submit">CALCULAR</button>
+            </div>    
+            <p><a href="">Não sei meu CEP</a></p> <!--Envia a Home, implementado assim só para os efeitos limitados do challenge-->
         </form>
         
     </aside>

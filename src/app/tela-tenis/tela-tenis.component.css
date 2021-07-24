@@ -53,11 +53,14 @@ article{
     height: 65px;
     background-color: rgb(228, 228, 228);
     border-radius: 10px;
-    margin: 0px 3.5px 3.5px 3.5px
+    margin: 0px 3.5px 3.5px 3.5px;
+    cursor: pointer;
 }
 
 .Selected{
-    opacity: 0.2;
+    background-color: transparent!important;
+    box-sizing: border-box;
+    border: 1px solid #171717;
 }
 
 
@@ -70,7 +73,7 @@ article{
 #carrousel img{
     width: 40vw;
     height: 40vw;
-    margin: 0px -4vw 0px -4vw;
+    margin: 0px -4vw -2vw -4vw;
     z-index: 100;
 }
 
@@ -84,6 +87,10 @@ article{
     z-index: 200;
 }
 
+#carrousel button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
 #carrousel button img{
     width: 7px;
     height: 14px;
@@ -91,13 +98,21 @@ article{
 }
 
 article button{
+    top: 622px;
     width: 266px;
     height: 60px;
+    padding: 0px;
     border-radius: 10px;
     border-style: none;
     font-size: 14px;
     color: #707070;
     background-color: rgb(228, 228, 228);
+    margin-bottom: 86px;
+    z-index: 200;
+}
+
+article button:hover{
+    background-color: rgb(211, 211, 211);
 }
 
 article button img{
@@ -106,11 +121,54 @@ article button img{
     margin-left: 12px;
 }
 
+
+
 aside{
     width: 50vw;
     background-color: #FFFFFF;
     opacity: 1;
+    margin: 40px;
+    margin-right: 139px;
 }
+
+h5{
+    /* width: 236px;
+    height: 16px; */
+    margin-bottom: 25px;
+    text-align: left;
+    letter-spacing: 0px;
+    font: normal normal normal 14px 'Gotham-Book';
+    color: #171717;
+    opacity: 0.5;
+}
+
+h5 span{
+    font-family: 'Gotham-Medium';
+}
+
+h2{
+    font: normal normal medium 16px;
+    letter-spacing: 0px;
+    color: #171717;
+    opacity: 0.5;
+}
+
+h1{
+    margin-top: 5px;
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #171717;
+    opacity: 1;
+}
+
+
+
+
+
+
+
 
 #code{
     display: flex;
@@ -120,23 +178,215 @@ aside{
 #code figure{
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
 }
+
+#code figure img{
+    margin-right: 10.25px;
+}
+
+#code figure figcaption{
+    font-size: 14px;
+    color: #8B8B8B;
+}
+
+
+
+
+aside p{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Gotham-Book";
+    letter-spacing: 0px;
+    color: #171717;
+    opacity: 0.5;
+}
+
+h3{
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+    margin-bottom: 15px;
+}
+
+
 
 ul{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 33px;
 }
+
+li{
+    width: 120px;
+    height: 55px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    background: #E4E4E4 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #8B8B8B; */
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sizeSelected{
+    background-color: rgb(233,233,233);
+    color: #8B8B8B;
+    opacity: 1;
+}
+
+/* li:hover{
+    background-color: rgb(233,233,233);
+} */
 
 button figure{
     display: flex;
     flex-direction: row;
 }
 
+#cartButton{
+    width: 273px;
+    height: 60px;
+    background: rgb(2, 108, 182) 0% 0% no-repeat padding-box;
+    border-style: none;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal medium 14px/40px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 22px;
+    margin-right: 7px;
+}
 
+#cartButton:hover{
+    background-color: rgb(2, 97, 164);
+}
+
+figure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#desireButton{
+    width: 225px;
+    height: 60px;
+    background-color: rgb(192, 218, 237);
+    border-radius: 10px;
+    border-style: none;
+    border-radius: 10px;
+    text-align: left;
+    font: normal normal medium 14px/40px;
+    letter-spacing: 0px;
+    padding: 22px;
+}
+
+#desireButton:hover{
+    background-color: rgb(167, 204, 230);
+}
+
+
+#desireButton figure figcaption{
+    color: #026CB6;
+    opacity: 1;
+}
+
+h4{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
 
 
 form{
     border: 2px solid #F5F5F5;
     border-radius: 10px;
     opacity: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+form p{
+    margin: 0px;
+    padding: 20px;
+    font-family: "Gotham-Book";
+    font-size: 16px;
+    color: #171717;
+    opacity: 0.5;
+}
+
+form p:nth-of-type(2){
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #026CB6;
+    opacity: 1;
+    
+}
+
+form p:nth-of-type(2) a {
+    text-decoration: none;
+    color: #026CB6;
+    font-size: 14px;
+    font-family: "Gotham-Book";
+}
+
+form div{
+    /* background-color: seagreen; */
+    margin-left: 20px;
+    margin-right: 20px;
+    /* width: 465px; */
+    height: 55px;
+    border: 1px solid rgb(233,233,233);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* opacity: 0.15; */
+}
+
+form div input{
+    text-indent: 20px;
+    /* height: 50px; */
+    border-style: none;
+    font: normal normal normal 16px/40px "Gotham-Book";
+    letter-spacing: 0px;
+    color: #171717;
+    opacity: 0.75;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+form div button{
+    width: 120px;
+    height: 55px;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 10px;
+    letter-spacing: 0px;
+    padding: 20px;
+    color: #026CB6;
+    background-color: #DEDEDE;
+    opacity: 1;
+}
+
+form div button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+button:hover{
+    cursor: pointer
 }
