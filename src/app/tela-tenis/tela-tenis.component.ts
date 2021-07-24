@@ -11,12 +11,11 @@ export class TelaTenisComponent implements OnInit {
   public photoNumber: any
   public elemento: any
   public nikeChannel: any
+  public size: any
   constructor() { }
 
   ngOnInit(): void {
     this.channel = "../../assets/nike-1.png"
-    this.photoNumber = 1;
-    this.elemento = 1
   }
 
   public channeling(){
@@ -36,6 +35,16 @@ export class TelaTenisComponent implements OnInit {
     this.channeling()
   }
 
+  public selectSize (NUM: Number) {
+    this.size = NUM
+    for (let i = 37; i < 46; i++) {
+      this.nikeChannel = document.getElementById("size"+i.toString());
+      this.nikeChannel.classList.remove('sizeSelected')
+    }
+    this.nikeChannel = document.getElementById("size"+this.size);
+    this.nikeChannel.classList.add('sizeSelected')
+  }
+
   public nextChannel (){
     this.photoNumber = this.photoNumber + 1
     if (this.photoNumber>6){
@@ -52,12 +61,4 @@ export class TelaTenisComponent implements OnInit {
     this.channeling()
   }
   
-  
-  // public play (){
-  //   this.nextChannel ()
-  //   for (var start = 1; start < 12; start++)
-  //   setTimeout( () => { this.nextChannel ();  }, 1500 * start);
-  // }
-
-
 }
