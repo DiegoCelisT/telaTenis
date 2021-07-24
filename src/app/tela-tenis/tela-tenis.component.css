@@ -56,6 +56,12 @@ article{
     margin: 0px 3.5px 3.5px 3.5px
 }
 
+.Selected{
+    opacity: 0.2;
+}
+
+
+
 #carrousel{
     display: flex;
     align-items: center;
@@ -65,6 +71,7 @@ article{
     width: 40vw;
     height: 40vw;
     margin: 0px -4vw 0px -4vw;
+    z-index: 100;
 }
 
 #carrousel button{
@@ -74,6 +81,7 @@ article{
     border-width: 0px;
     background-color: rgb(228, 228, 228);
     padding: 0px;
+    z-index: 200;
 }
 
 #carrousel button img{

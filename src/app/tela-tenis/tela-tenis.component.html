@@ -1,18 +1,19 @@
 <section>
     <article>
         <div id="photoList">
-            <img src="../../assets/nike-1.png" alt="nike-1">
-            <img src="../../assets/nike-2.png" alt="nike-2">
-            <img src="../../assets/nike-3.png" alt="nike-3">
-            <img src="../../assets/nike-4.png" alt="nike-4">
-            <img src="../../assets/nike-5.png" alt="nike-5">
-            <img src="../../assets/nike-6.png" alt="nike-6">
+            <img src="../../assets/nike-1.png" alt="nike-1" (click)="selectChannel(1)" id="1" class="Selected">
+            <img src="../../assets/nike-2.png" alt="nike-2" (click)="selectChannel(2)" id="2">
+            <img src="../../assets/nike-3.png" alt="nike-3" (click)="selectChannel(3)" id="3">
+            <img src="../../assets/nike-4.png" alt="nike-4" (click)="selectChannel(4)" id="4">
+            <img src="../../assets/nike-5.png" alt="nike-5" (click)="selectChannel(5)" id="5">
+            <img src="../../assets/nike-6.png" alt="nike-6" (click)="selectChannel(6)" id="6">
         </div>
 
+        
         <div id="carrousel">
-            <button><img src="../../assets/Icons_SVG/seta-carrosel-anterior.svg" alt="Back"></button>
-            <img src="../../assets/nike-1.png" alt="imagem principal">
-            <button><img src="../../assets/Icons_SVG/seta-carrosel-proximo.svg" alt="Next"></button>
+            <button (click)="previousChannel()"><img src="../../assets/Icons_SVG/seta-carrosel-anterior.svg" alt="Back"></button>
+            <img src="{{ this.channel }}" alt="imagem principal">
+            <button (click)="nextChannel()"><img src="../../assets/Icons_SVG/seta-carrosel-proximo.svg" alt="Next"></button>
         </div>
 
         <button>VÍDEO DE DEMONSTRAÇÃO<img src="../../assets/Icons_SVG/seta-link.svg" alt="seta direita"></button>
