@@ -14,7 +14,7 @@ export class TelaTenisComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.channel = "../../assets/nike-1.png"
+    this.channel = "assets/nike-1.png"
     this.photoNumber = 1;
   }
 
@@ -27,7 +27,7 @@ export class TelaTenisComponent implements OnInit {
     //Estabelecendo o canal selecionado:
     this.nikeChannel = document.getElementById(this.photoNumber);
     this.nikeChannel.classList.add('Selected')
-    this.channel = "../../assets/nike-"+this.photoNumber+".png";
+    this.channel = "assets/nike-"+this.photoNumber+".png";
   }
 
   public selectChannel(NUM: Number) {

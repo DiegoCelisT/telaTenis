@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TelaTenisComponent } from './tela-tenis/tela-tenis.component';
 
 const ROUTES: Routes = [
-  { path: '', component:TelaTenisComponent },
+  { path: "", component:TelaTenisComponent },
 ];
 
 export const routing: ModuleWithProviders<any> = RouterModule.forRoot(ROUTES, { useHash: true });

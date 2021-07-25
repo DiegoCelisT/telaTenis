@@ -312,7 +312,6 @@ form p:nth-of-type(2){
     letter-spacing: 0px;
     color: #026CB6;
     opacity: 1;
-    
 }
 
 form p:nth-of-type(2) a {
@@ -367,6 +366,7 @@ button:hover{
 }
 
 
+/* RESPONSIVIDADE */
 
 
 @media (max-width: 1300px){
@@ -408,87 +408,80 @@ button:hover{
 
 @media (min-width: 720px) and (max-width: 1000px){
 
-#carrousel button{
-    margin: 0px;
-    width: 45px;
-    height: 45px;
-}
+    #carrousel button{
+        margin: 0px;
+        width: 45px;
+        height: 45px;
+    }
 
-aside{
-    margin-right: 19px;
-}
+    aside{
+        margin-right: 19px;
+    }
 
-li{
-    width: 90px;
-}
+    li{
+        width: 90px;
+    }
 
 }
 
 
 @media (max-width: 720px){
 
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
 
+    article{
+        width: 100%;
+    }
 
-    /* background-color: salmon; */
+    #photoList{
+        width: 80vw;
+    }
 
+    #carrousel{
+        justify-content: center;
+        width: 95vw;
+    }
 
-}
+    #carrousel img{ 
+        width: 80vw;
+        height: 80vw;
+    }
 
-article{
-    width: 100%;
-}
+    #carrousel button{
+        margin: 0px;
+        width: 10vw;
+        height: 10vw;
+    }
 
-#photoList{
-    width: 80vw;
-}
+    article button{
+        margin-bottom: 30px;
+    }
 
-#carrousel{
-    justify-content: center;
-    width: 95vw;
+    aside{
+        width: 90vw;
+        margin: 40px 4vw 40px 4vw;
+    }
 
-}
+    h5{
+        width: 90vw;
+    }
 
-#carrousel img{ 
-    width: 80vw;
-    height: 80vw;
-}
+    aside p{
+        width: 90vw;
+    }
 
-#carrousel button{
-    margin: 0px;
-    width: 10vw;
-    height: 10vw;
-}
+    li{
+        width: 85px;
+    }
 
-article button{
-    margin-bottom: 30px;
-}
-
-aside{
-    width: 90vw;
-    margin: 40px 4vw 40px 4vw;
-    /* margin-left: 0px; */
-}
-
-h5{
-    width: 90vw;
-}
-
-aside p{
-    width: 90vw;
-}
-
-li{
-    width: 85px;
-}
-
-form{
-    width: 88vw;
-}
+    form{
+        width: 88vw;
+    }
 
 }

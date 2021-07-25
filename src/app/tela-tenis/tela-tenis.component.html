@@ -1,62 +1,52 @@
 <section>
     <article>
         <div id="photoList">
-            <img src="../../assets/nike-1.png" alt="nike-1" (click)="selectChannel(1)" id="1" class="Selected">
-            <img src="../../assets/nike-2.png" alt="nike-2" (click)="selectChannel(2)" id="2">
-            <img src="../../assets/nike-3.png" alt="nike-3" (click)="selectChannel(3)" id="3">
-            <img src="../../assets/nike-4.png" alt="nike-4" (click)="selectChannel(4)" id="4">
-            <img src="../../assets/nike-5.png" alt="nike-5" (click)="selectChannel(5)" id="5">
-            <img src="../../assets/nike-6.png" alt="nike-6" (click)="selectChannel(6)" id="6">
-        </div>
-
-        
+            <img src="assets/nike-1.png" alt="nike-1" (click)="selectChannel(1)" id="1" class="Selected">
+            <img src="assets/nike-2.png" alt="nike-2" (click)="selectChannel(2)" id="2">
+            <img src="assets/nike-3.png" alt="nike-3" (click)="selectChannel(3)" id="3">
+            <img src="assets/nike-4.png" alt="nike-4" (click)="selectChannel(4)" id="4">
+            <img src="assets/nike-5.png" alt="nike-5" (click)="selectChannel(5)" id="5">
+            <img src="assets/nike-6.png" alt="nike-6" (click)="selectChannel(6)" id="6">
+        </div>       
         <div id="carrousel">
-            <button (click)="previousChannel()"><img src="../../assets/Icons_SVG/seta-carrosel-anterior.svg" alt="Back"></button>
+            <button (click)="previousChannel()"><img src="assets/Icons_SVG/seta-carrosel-anterior.svg" alt="Back"></button>
             <img src="{{ this.channel }}" alt="imagem principal">
-            <button (click)="nextChannel()"><img src="../../assets/Icons_SVG/seta-carrosel-proximo.svg" alt="Next"></button>
+            <button (click)="nextChannel()"><img src="assets/Icons_SVG/seta-carrosel-proximo.svg" alt="Next"></button>
         </div>
-
-        <button>VÍDEO DE DEMONSTRAÇÃO<img src="../../assets/Icons_SVG/seta-link.svg" alt="seta direita"></button>
-        
+        <button>VÍDEO DE DEMONSTRAÇÃO<img src="assets/Icons_SVG/seta-link.svg" alt="seta direita"></button>
     </article>
     
     <aside>
         <h5>
             Calçados / Masculino / Esportes / <span>Casual</span>  
         </h5>
-
         <h2>
             CASUAL
         </h2>
-
         <h1>
             Tênis Nike Air Max 2090 Masculino
         </h1>
-
         <div id="code">
             <figure>
-                <img src="../../assets/Icons_SVG/icon-numero-1.svg" alt="lápis">
+                <img src="assets/Icons_SVG/icon-numero-1.svg" alt="lápis">
                 <figcaption>
                     55148
                 </figcaption>
             </figure>
             <figure>
-                <img src="../../assets/Icons_SVG/icon-numero-2.svg" alt="etiqueta">
+                <img src="assets/Icons_SVG/icon-numero-2.svg" alt="etiqueta">
                 <figcaption>
                     AP0900
                 </figcaption>
             </figure>
-            <img src="../../assets/Icons_SVG/icon-avalia��o.svg" alt="avaliação">
+            <img src="assets/Icons_SVG/icon-avalia��o.svg" alt="avaliação">
         </div>
-
         <p>
             Traga o passado para o futuro com o Nike Air Max 2090. Inspirado no icônico Air Max 90, o 2090 conta com o amortecimento Nike Air debaixo do pé, que proporciona conforto inigualável, enquanto a tela transparente na parte de cima se mistura com as características atemporais do OG para um look moderno e ousado.
         </p>
-
         <h3>
             TAMANHO
         </h3>
-
         <ul>
             <li (click)="selectSize(37)" id="size37" class="sizeSelected">37</li>
             <li (click)="selectSize(38)" id="size38">38</li>
@@ -71,7 +61,7 @@
         <div id="buyButtons">
             <button id="cartButton">
                 <figure>
-                    <img src="../../assets/Icons_SVG/icon carrinho.svg" alt="carrinho">
+                    <img src="assets/Icons_SVG/icon carrinho.svg" alt="carrinho">
                     <figcaption>
                         ADICIONAR AO CARRINHO
                     </figcaption>
@@ -79,15 +69,13 @@
             </button>
             <button id="desireButton">
                 <figure>
-                    <img src="../../assets/Icons_SVG/icon-desejos.svg" alt="coração">
+                    <img src="assets/Icons_SVG/icon-desejos.svg" alt="coração">
                     <figcaption>
                         + LISTA DE DESEJOS
                     </figcaption>
                 </figure>
             </button>
         </div>
-        
-
         <h4>
             CALCULAR FRETE E ENTREGA
         </h4>
@@ -97,10 +85,7 @@
                 <input type="text" name="CEP" placeholder="CEP" required>
                 <button type="submit">CALCULAR</button>
             </div>    
-            <p><a href="">Não sei meu CEP</a></p> <!--Envia a Home, implementado assim só para os efeitos limitados do challenge-->
+            <p><a href="">Não sei meu CEP</a></p>  <!-- Envia a Home, implementado assim só para os efeitos limitados do challenge -->
         </form>
-        
     </aside>
-
-
 </section>
