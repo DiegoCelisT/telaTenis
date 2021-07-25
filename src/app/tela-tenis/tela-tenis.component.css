@@ -1,9 +1,4 @@
 @font-face{ 
-    font-family: 'Gotham';
-    src: url('../../assets/gotham_ssv/Gotham-Light.otf');
-}
-
-@font-face{ 
     font-family: 'Gotham-Medium';
     src: url('../../assets/gotham_ssv/Gotham-Medium.otf');
 }
@@ -54,6 +49,10 @@ article{
     border-radius: 10px;
     margin: 0px 3.5px 3.5px 3.5px;
     cursor: pointer;
+}
+
+#photoList img:hover{
+    background-color: rgb(211, 211, 211);
 }
 
 .Selected{
@@ -220,12 +219,22 @@ li{
     cursor: pointer;
 }
 
-.sizeSelected, li:hover{
+li:hover{
     background-color: rgb(233,233,233);
     color: #8B8B8B;
     opacity: 1;
 }
 
+.sizeSelected {
+    background-color: transparent!important;
+    box-sizing: border-box;
+    color: #171717!important;
+    border: 1px solid #171717;
+    border-radius: 10px;
+    opacity: 1;
+    font-size: 16px;
+    font-family: "Gotham-Book";
+}
 
 button figure{
     display: flex;
@@ -329,6 +338,7 @@ form div{
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 form div input{
@@ -338,10 +348,35 @@ form div input{
     font-family: "Gotham-Book";
     letter-spacing: 0px;
     color: #8A8A8A;
-    opacity: 0.75;
     padding: 0px;
     width: 100%;
     height: 100%;
+}
+
+form div input:hover, form div:hover{
+    background-color: rgb(251, 251, 251);
+    color: #8A8A8A;
+    border-radius: 10px;
+    
+}
+
+/* Reset de bordas para navegadores: */
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: none;
+}
+
+form div input:focus, form div:focus{
+    background-color: rgb(255, 255, 255);
+    color: #8A8A8A;
+    border: 1px solid #026CB6;
+    border-radius: 10px;
+}
+
+form div button:focus{
+    background-color: #BFDAED!important;
+    border: 1px solid #026CB6!important;
+    border-radius: 10px!important;
+    color: #026CB6;
 }
 
 form div button{
@@ -353,12 +388,12 @@ form div button{
     letter-spacing: 0px;
     padding: 20px;
     color: #026CB6;
-    background-color: #DEDEDE;
+    background-color: rgb(233, 233, 233);
     opacity: 1;
 }
 
 form div button:hover{
-    background-color: rgb(211, 211, 211);
+    background-color: #DEDEDE;
 }
 
 button:hover{
