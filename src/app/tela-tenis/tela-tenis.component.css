@@ -43,7 +43,7 @@ article{
 #photoList{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -62,8 +62,6 @@ article{
     box-sizing: border-box;
     border: 1px solid #171717;
 }
-
-
 
 #carrousel{
     display: flex;
@@ -121,8 +119,6 @@ article button img{
     margin-left: 12px;
 }
 
-
-
 aside{
     width: 50vw;
     background-color: #FFFFFF;
@@ -132,8 +128,6 @@ aside{
 }
 
 h5{
-    /* width: 236px;
-    height: 16px; */
     margin-bottom: 25px;
     text-align: left;
     letter-spacing: 0px;
@@ -154,7 +148,7 @@ h2{
 }
 
 h1{
-    margin-top: 5px;
+    margin-top: 12px;
     margin-bottom: 12px;
     text-align: left;
     font-size: 36px;
@@ -162,13 +156,6 @@ h1{
     color: #171717;
     opacity: 1;
 }
-
-
-
-
-
-
-
 
 #code{
     display: flex;
@@ -190,9 +177,6 @@ h1{
     color: #8B8B8B;
 }
 
-
-
-
 aside p{
     margin-top: 24px;
     margin-bottom: 24px;
@@ -211,8 +195,6 @@ h3{
     opacity: 1;
     margin-bottom: 15px;
 }
-
-
 
 ul{
     display: flex;
@@ -238,17 +220,12 @@ li{
     cursor: pointer;
 }
 
-
-
 .sizeSelected, li:hover{
     background-color: rgb(233,233,233);
     color: #8B8B8B;
     opacity: 1;
 }
 
-/* li:hover{
-    background-color: rgb(233,233,233);
-} */
 
 button figure{
     display: flex;
@@ -268,6 +245,7 @@ button figure{
     color: #FFFFFF;
     padding: 22px;
     margin-right: 7px;
+    margin-bottom: 7px;
 }
 
 #cartButton:hover{
@@ -297,7 +275,6 @@ figure{
     background-color: rgb(167, 204, 230);
 }
 
-
 #desireButton figure figcaption{
     color: #026CB6;
     opacity: 1;
@@ -312,13 +289,13 @@ h4{
     opacity: 1;
 }
 
-
 form{
     border: 2px solid #F5F5F5;
     border-radius: 10px;
     opacity: 1;
     padding: 0px;
     margin: 0px;
+    width: 505px;
 }
 
 form p{
@@ -346,25 +323,22 @@ form p:nth-of-type(2) a {
 }
 
 form div{
-    /* background-color: seagreen; */
     margin-left: 20px;
     margin-right: 20px;
-    /* width: 465px; */
     height: 55px;
     border: 1px solid rgb(233,233,233);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    /* opacity: 0.15; */
 }
 
 form div input{
     text-indent: 20px;
-    /* height: 50px; */
     border-style: none;
-    font: normal normal normal 16px/40px "Gotham-Book";
+    font-size: 16px;
+    font-family: "Gotham-Book";
     letter-spacing: 0px;
-    color: #171717;
+    color: #8A8A8A;
     opacity: 0.75;
     padding: 0px;
     width: 100%;
@@ -391,3 +365,75 @@ form div button:hover{
 button:hover{
     cursor: pointer
 }
+
+
+
+
+@media (max-width: 1300px){
+
+    #carrousel button{
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 1100px){
+
+    aside{
+        margin-left: 20px;
+    }
+
+    aside p{
+        width: 47vw;
+    }
+
+    ul{
+        margin-right: 10px;
+    }
+
+    #buyButtons{
+        flex-wrap: wrap;
+        margin-right: 7px;
+    }
+
+    form{
+        width: 46vw;
+    }
+
+    form p{
+        width: 42vw;
+    }
+
+}
+
+@media (min-width: 720px) and (max-width: 1000px){
+
+#carrousel button{
+    margin: 0px;
+    width: 45px;
+    height: 45px;
+}
+
+aside{
+    margin-right: 19px;
+}
+
+li{
+    width: 90px;
+}
+
+}
+
+/* @media (max-width: 720px){
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+article, aside{
+    width: 100vw;
+}
+
+
+} */

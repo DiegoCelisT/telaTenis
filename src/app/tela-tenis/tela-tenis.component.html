@@ -58,7 +58,7 @@
         </h3>
 
         <ul>
-            <li (click)="selectSize(37)" class="sizeSelected" id="size37">37</li>
+            <li (click)="selectSize(37)" id="size37" class="sizeSelected">37</li>
             <li (click)="selectSize(38)" id="size38">38</li>
             <li (click)="selectSize(39)" id="size39">39</li>
             <li (click)="selectSize(40)" id="size40">40</li>
@@ -68,23 +68,25 @@
             <li (click)="selectSize(44)" id="size44">44</li>
             <li (click)="selectSize(45)" id="size45">45</li>
         </ul>
-
-        <button id="cartButton">
-            <figure>
-                <img src="../../assets/Icons_SVG/icon carrinho.svg" alt="carrinho">
-                <figcaption>
-                    ADICIONAR AO CARRINHO
-                </figcaption>
-            </figure>
-        </button>
-        <button id="desireButton">
-            <figure>
-                <img src="../../assets/Icons_SVG/icon-desejos.svg" alt="coração">
-                <figcaption>
-                    + LISTA DE DESEJOS
-                </figcaption>
-            </figure>
-        </button>
+        <div id="buyButtons">
+            <button id="cartButton">
+                <figure>
+                    <img src="../../assets/Icons_SVG/icon carrinho.svg" alt="carrinho">
+                    <figcaption>
+                        ADICIONAR AO CARRINHO
+                    </figcaption>
+                </figure>
+            </button>
+            <button id="desireButton">
+                <figure>
+                    <img src="../../assets/Icons_SVG/icon-desejos.svg" alt="coração">
+                    <figcaption>
+                        + LISTA DE DESEJOS
+                    </figcaption>
+                </figure>
+            </button>
+        </div>
+        
 
         <h4>
             CALCULAR FRETE E ENTREGA
