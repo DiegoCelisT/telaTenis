@@ -21,7 +21,6 @@ section{
     top: 0px;
     left: 0px;
     width: 100%;
-    /* height: 990px; */
     background-color: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
     display: flex;
@@ -131,7 +130,8 @@ h5{
     margin-bottom: 25px;
     text-align: left;
     letter-spacing: 0px;
-    font: normal normal normal 14px 'Gotham-Book';
+    font-size: 14px;
+    font-family: 'Gotham-Book';
     color: #171717;
     opacity: 0.5;
 }
@@ -141,7 +141,7 @@ h5 span{
 }
 
 h2{
-    font: normal normal medium 16px;
+    font-size: 16px;
     letter-spacing: 0px;
     color: #171717;
     opacity: 0.5;
@@ -240,7 +240,7 @@ button figure{
     border-radius: 10px;
     opacity: 1;
     text-align: left;
-    font: normal normal medium 14px/40px;
+    font-size: 14px;
     letter-spacing: 0px;
     color: #FFFFFF;
     padding: 22px;
@@ -266,7 +266,7 @@ figure{
     border-style: none;
     border-radius: 10px;
     text-align: left;
-    font: normal normal medium 14px/40px;
+    font-size: 14px;
     letter-spacing: 0px;
     padding: 22px;
 }
@@ -424,16 +424,71 @@ li{
 
 }
 
-/* @media (max-width: 720px){
+
+@media (max-width: 720px){
 
 section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+
+    /* background-color: salmon; */
+
+
 }
 
-article, aside{
-    width: 100vw;
+article{
+    width: 100%;
 }
 
+#photoList{
+    width: 80vw;
+}
 
-} */
+#carrousel{
+    justify-content: center;
+    width: 95vw;
+
+}
+
+#carrousel img{ 
+    width: 80vw;
+    height: 80vw;
+}
+
+#carrousel button{
+    margin: 0px;
+    width: 10vw;
+    height: 10vw;
+}
+
+article button{
+    margin-bottom: 30px;
+}
+
+aside{
+    width: 90vw;
+    margin: 40px 4vw 40px 4vw;
+    /* margin-left: 0px; */
+}
+
+h5{
+    width: 90vw;
+}
+
+aside p{
+    width: 90vw;
+}
+
+li{
+    width: 85px;
+}
+
+form{
+    width: 88vw;
+}
+
+}
